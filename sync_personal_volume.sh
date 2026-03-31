@@ -290,6 +290,8 @@ RSYNC_OPTS=(
   "--human-readable"
   "--progress"
   "--8-bit-output"
+  "--exclude=._*"
+  "--exclude=.DS_Store"
 )
 
 if rsync --version 2>/dev/null | grep -qi "iconv"; then
